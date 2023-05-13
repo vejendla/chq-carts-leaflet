@@ -55,23 +55,56 @@
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
 
-	// read data from csv
-	$.get('gtfs-data/stops.txt', function(csvString){
+	let stop_times = [];
+	// read stop time data to get route information
+	/*
+	$.get('gtfs-data/stop_times.txt', function(csvString){
+		stop_times = Papa.parse(csvString, {header:true, dynamicTyping: true}).data;
+		console.log(stop_times);
+	});
+	*/
+	function read_stop_times(csvString) {
+		console.log("in read_stop_times");
+		let stop_times = Papa.parse(csvString, {header:true, dynamicTyping: true}).data;
+		console.log(stop_times);
+	}
+
+	function get_stop_times() {
+		console.log("in get_stop_times");
+		$.get('gtfs-data/stop_times.txt', read_stop_times);
+		console.log(stop_times);
+	}
+
+	get_stop_times();
+
+	//https://stackoverflow.com/questions/22593515/analog-to-sql-join-for-javascript-objects
+
+	//console.log(stop_times);
+	function read_stops_csv(csvString){
+
 		// use PapaParse to convert string to array of objects
 		var data = Papa.parse(csvString, {header:true, dynamicTyping: true}).data;
 
 		//for each row, create a market and add it to the map
 		for (var i in data) {
 			var row = data[i];
+			//console.log(row);
+
+			// DIY error handling
+			if (row.stop_id == null) {
+				break;
+			}
+
 			let popupContent = row.stop_name;
 			var marker = L.marker([row.stop_lat, row.stop_lon],{
 				opacity: 1
 			}).bindPopup(popupContent);
 			marker.addTo(map);
 		}
+	}
 
-		console.log[row[1]];
-	});
+	// read data from csv
+	$.get('gtfs-data/stops.txt', read_stops_csv);
 </script>
 
 
