@@ -1,0 +1,9 @@
+service_id,date,exception_type
+CityWD,20230529,2
+CityWD,20231225,2
+CityWD,20230407,2
+CityWD,20231123,2
+CityWD,20230220,2
+CityWD,20230704,2
+CityWD,20230904,2
+CityWD,20230101,2

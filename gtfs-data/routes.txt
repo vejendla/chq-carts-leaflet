@@ -1,0 +1,10 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_branding_url,route_color,route_text_color,route_sort_order,continuous_pickup,continuous_drop_off
+ROUTE_d16fbdb8-642b-4274-ae49-1513ff3fac90,CARTS-Chautauqua-ny-us,Southwest Express,City of Jamestown- Southwest Express,,3,,,f9c7c7,,,,
+ROUTE_6df536dc-6a68-4a89-87cb-4750df70e2e6,CARTS-Chautauqua-ny-us,Lakewood via Fairmount,City of Jamestown- Lakewood via Fairmount,,3,,,4a90e2,,,,
+ROUTE_8c355458-0941-453c-a986-3556d9724836,CARTS-Chautauqua-ny-us,Falconer Route,Jamestown- Falconer Route,,3,,,f5a623,,,,
+ROUTE_8e7bf696-4cfa-43c1-b463-7a6989a0a8b5,CARTS-Chautauqua-ny-us,Lakewood via Jones & Gifford,City of Jamestown- Lakewood via Jones & Gifford,,3,,,50e3c2,,,,
+12434,CARTS-Chautauqua-ny-us,Baker,City of Jamestown- Baker Route,,3,,,d0021b,000000,,,
+12433,CARTS-Chautauqua-ny-us,Green,City of Dunkirk- Green Route,,3,,,417505,000000,,,
+ROUTE_314ef596-f49f-49dc-b1f1-a6a1a39f0dd8,CARTS-Chautauqua-ny-us,North Main,City of Jamestown- North Main Route,,3,,,7a2d8c,,,,
+ROUTE_bb320423-50d7-4b30-9d24-86edd4c1b02f,CARTS-Chautauqua-ny-us,Red,City of Dunkirk- Red Route,,3,,,d0021b,,,,
+Willard,CARTS-Chautauqua-ny-us,Willard,City of Jamestown-Willard Route,,3,,,417505,FFFFFF,,,
